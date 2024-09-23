@@ -1,29 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-No-05</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-No-05</title>
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
-    <!-- Header section start. -->
-    <header>
 
-    </header>
-    <!-- Header section end. -->
-    <!-- Main section start. -->
-    <main>
-
-    </main>
-    <!-- Main section end. -->
-    <!-- Footer section start. -->
-    <footer>
-
-    </footer>
-    <!-- Footer section end. -->
-    <!-- Scripts are here. -->
-    <script src="./custom-js/customs.js"></script>
+<body class="lexend-font mx-auto">
+  <!-- Header section start. -->
+  <header class="sticky top-0 rounded-b-sm mb-4">
+    <!-- Nav bar start. -->
+    <div id="nav-bg" class="navbar md:px-24 pb-3  bg-[#2ecc71]">
+      <div class="navbar-start">
+        <button class="btn btn-color px-8">Blog</button>
+      </div>
+      <div class="navbar-center hidden md:block">
+        <div class="flex gap-2">
+          <img src="./images/dolor-icon.png" alt="Donate_Logo">
+          <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="flex gap-2">
+          <img src="./images/dolor-icon.png" alt="Dolor_Logo">
+          <h4 class="font-medium text-xl text-[#111111B3]">4000 BDT</h4>
+        </div>
+      </div>
+    </div>
+    <!-- button -->
+    <div id="button-bg" class="mx-auto text-center md:pt-8 pb-4 bg-[white]">
+      <button id="donation-btn" class="btn btn-color">Donation</button>
+      <button id="history-btn" class="btn ">History</button>
+    </div>
+    <!-- Nav bar end. -->
+  </header>
+  <!-- Header section end. -->
+  <!-- Main section start. -->
+  <main class="w-4/5 mx-auto">
+    <!-- card section -->
+    <section class="" id="donate-sec">
+      <div class="card-container border-red-900">
+        <!-- card 01 -->
+        <div class="md:flex md:gap-8 mb-6">
+          <!--card image -->
+          <div class="md:w-[50%] mb-4 md:mb-0"><img src="./images/i-barguna.png" alt="Boarguna_Flade" class="w-full"></div>
+          <!-- texts 0f card -->
+          <div class="md:w-[50%]">
+            <!-- amount -->
+            <div class="flex gap-2 btn w-fit mb-4">
+              <img src="./images/dolor-icon.png">
+              <h4>100 BDT</h4>
+            </div>
+            <!-- headline -->
+            <h2 class="text-[#111111] font-bold text-xl mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
+            <!-- description -->
+            <p class="text-[#111111B3] font-light mb-4">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <!-- input amount -->
+            <form class="mt-4">
+              <input type="text" name="money" id="donation-amount" class="input input-bordered w-full mb-4"><br>
+              <button class="btn btn-color w-full">Donate Now</button>
+            </form>
+          </div>
+        </div>
+        <!-- card 01 end -->
+        <!-- card 02 -->
+        <div class="md:flex md:gap-8 mb-6">
+          <!--card image -->
+          <div class="md:w-[50%] mb-4 md:mb-0"><img src="./images/i-barguna.png" alt="Boarguna_Flade" class="w-full"></div>
+          <!-- texts 0f card -->
+          <div class="md:w-[50%]">
+            <!-- amount -->
+            <div class="flex gap-2 btn w-fit mb-4">
+              <img src="./images/dolor-icon.png">
+              <h4>100 BDT</h4>
+            </div>
+            <!-- headline -->
+            <h2 class="text-[#111111] font-bold text-xl mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
+            <!-- description -->
+            <p class="text-[#111111B3] font-light mb-4">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <!-- input amount -->
+            <form class="mt-4">
+              <input type="text" name="money" id="donation-amount" class="input input-bordered w-full mb-4"><br>
+              <button class="btn btn-color w-full">Donate Now</button>
+            </form>
+          </div>
+        </div>
+        <!-- card 02 end -->
+        <!-- card 03 -->
+        <div class="md:flex md:gap-8 mb-6">
+          <!--card image -->
+          <div class="md:w-[50%] mb-4 md:mb-0"><img src="./images/i-barguna.png" alt="Boarguna_Flade" class="w-full"></div>
+          <!-- texts 0f card -->
+          <div class="md:w-[50%]">
+            <!-- amount -->
+            <div class="flex gap-2 btn w-fit mb-4">
+              <img src="./images/dolor-icon.png">
+              <h4>100 BDT</h4>
+            </div>
+            <!-- headline -->
+            <h2 class="text-[#111111] font-bold text-xl mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
+            <!-- description -->
+            <p class="text-[#111111B3] font-light mb-4">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <!-- input amount -->
+            <form class="mt-4">
+              <input type="text" name="money" id="donation-amount" class="input input-bordered w-full mb-4"><br>
+              <button class="btn btn-color w-full">Donate Now</button>
+            </form>
+          </div>
+        </div>
+        <!-- card 03 end -->
+      </div>
+    </section>
+    <!-- history section -->
+    <section id="history-sec" class="hidden">
+      
+    </section>
+  </main>
+  <!-- Main section end. -->
+  <!-- Footer section start. -->
+  <footer class="bg-[#2ecc71]">
+    <div class="h-20"></div>
+  </footer>
+  <!-- Footer section end. -->
+  <!-- Scripts are here. -->
+  <script src="./custom-js/customs.js"></script>
 </body>
+
 </html>
