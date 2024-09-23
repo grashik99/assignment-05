@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
-    
+
+<body class="lexend-font mx-auto">
+    <!-- Header section start. -->
+    <header class="sticky top-0 rounded-b-sm mb-4">
+        <!-- Nav bar start. -->
+        <div id="nav-bg" class="navbar md:px-24 pb-3  bg-[#2ecc71]">
+            <div class="navbar-start">
+                <button class="btn btn-color px-8" id="home-btn">Home</button>
+            </div>
+            <div class="navbar-center hidden md:block">
+                <div class="flex gap-2">
+                    <img src="./images/dolor-icon.png" alt="Donate_Logo">
+                    <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="flex gap-2">
+                    <img src="./images/dolor-icon.png" alt="Dolor_Logo">
+                    <h4 class="font-medium text-xl text-[#111111B3]">4000 BDT</h4>
+                </div>
+            </div>
+        </div>
+        <!-- nav end -->
+    </header>
+    <script src="./custom-js/blog.js"></script>
 </body>
+
 </html>

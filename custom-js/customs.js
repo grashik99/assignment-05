@@ -27,3 +27,7 @@ document.getElementById('donation-btn').addEventListener('click',function(){
     document.getElementById('donation-btn').classList.add('btn-color');
     document.getElementById('donate-sec').classList.remove('hidden');
 })
+// blog button
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href="./blog.html"
+})
