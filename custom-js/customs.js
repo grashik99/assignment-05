@@ -13,6 +13,8 @@ window.addEventListener('scroll', function () {
         buttonBg.style.backgroundColor = '#2ecc70e6';
     }
 })
+
+
 // history button
 document.getElementById('history-btn').addEventListener('click', function () {
     document.getElementById('donate-sec').classList.add('hidden');
@@ -20,6 +22,8 @@ document.getElementById('history-btn').addEventListener('click', function () {
     document.getElementById('history-btn').classList.add('btn-color');
     document.getElementById('donation-btn').classList.remove('btn-color');
 });
+
+
 // donation button
 document.getElementById('donation-btn').addEventListener('click', function () {
     document.getElementById('history-btn').classList.remove('btn-color');
@@ -27,21 +31,31 @@ document.getElementById('donation-btn').addEventListener('click', function () {
     document.getElementById('donation-btn').classList.add('btn-color');
     document.getElementById('donate-sec').classList.remove('hidden');
 });
+
+
 // blog button
 document.getElementById('blog-btn').addEventListener('click', function () {
     window.location.href = "./blog.html"
 });
 
 
+
+// Donation borguna
 document.getElementById('barguna-btn').addEventListener('click', function (event) {
     event.preventDefault();
-    moneyAdd('donation-Barguna', 'main-money', 'Barguna-money');
+    moneyAdd('donation-Barguna', 'main-money', 'Barguna-money', 'Barguna');
 })
-
+// Donation cox's bazar
 document.getElementById('cox-btn').addEventListener('click', function (event) {
     event.preventDefault();
-    moneyAdd('donation-cox', 'main-money', 'cox-money');
+    moneyAdd('donation-cox', 'main-money', 'cox-money', 'coxs-bazar');
 })
+// Donation khulna
+document.getElementById('khulna-btn').addEventListener('click', function (event) {
+    event.preventDefault();
+    moneyAdd('donation-khulna', 'main-money', 'khulna-money', 'khulna');
+})
+
 
 
 // close confirmation 

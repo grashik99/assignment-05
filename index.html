@@ -47,7 +47,7 @@
     <section class="" id="donate-sec">
       <div class="card-container border-red-900">
         <!-- card 01 -->
-        <div class="md:flex md:gap-8 mb-6">
+        <div class="md:flex md:gap-8 mb-6 rounded-2xl border-2 p-2 md:p-8">
           <!--card image -->
           <div class="md:w-[50%] mb-4 md:mb-0"><img src="./images/i-barguna.png" alt="Barguna_Flade" class="w-full">
           </div>
@@ -56,10 +56,10 @@
             <!-- amount -->
             <div class="flex gap-2 btn w-fit mb-4">
               <img src="./images/dolor-icon.png">
-              <h4><span id="Barguna-money">3000</span> BDT</h4>
+              <h4><span id="Barguna-money">30000</span> BDT</h4>
             </div>
             <!-- headline -->
-            <h2 class="text-[#111111] font-bold text-xl mb-4">Donate for Flood at Barguna, Bangladesh</h2>
+            <h2 class="text-[#111111] font-bold text-xl mb-4">Donate for Flood at <span id="Barguna">Barguna</span>, Bangladesh</h2>
             <!-- description -->
             <p class="text-[#111111B3] font-light mb-4">We invite you to join us in a heartfelt effort to support the
               flood relief initiative in Barguna. The recent floods have devastated our community, displacing families
@@ -70,14 +70,14 @@
               rebuild!</p>
             <!-- input amount -->
             <form class="mt-4">
-              <input type="text" name="money" id="donation-Barguna" class="input input-bordered w-full mb-4"><br>
+              <input type="text" name="money" id="donation-Barguna" placeholder="Write Your Donation Amount!" class="input input-bordered w-full mb-4"><br>
               <button id="barguna-btn" class="btn btn-color w-full">Donate Now</button>
             </form>
           </div>
         </div>
         <!-- card 01 end -->
         <!-- card 02 -->
-        <div class="md:flex md:gap-8 mb-6">
+        <div class="md:flex md:gap-8 mb-6 rounded-2xl border-2 p-2 md:p-8">
           <!--card image -->
           <div class="md:w-[50%] mb-4 md:mb-0"><img src="./images/i-cox.png" alt="Coxes Bazar_Flade" class="w-full">
           </div>
@@ -89,7 +89,7 @@
               <h4><span id="cox-money">23000</span> BDT</h4>
             </div>
             <!-- headline -->
-            <h2 class="text-[#111111] font-bold text-xl mb-4">Donate for Flood at Cox's Bazar, Bangladesh</h2>
+            <h2 class="text-[#111111] font-bold text-xl mb-4">Donate for Flood at <span id="coxs-bazar" >Cox's Bazar</span>, Bangladesh</h2>
             <!-- description -->
             <p class="text-[#111111B3] font-light mb-4">In light of the recent devastating floods in Cox's Bazar, we are
               coming together as a community to raise funds and provide essential relief to those affected. Your support
@@ -100,14 +100,14 @@
               stand together and show our solidarity with Cox's Bazar during this challenging time!</p>
             <!-- input amount -->
             <form class="mt-4">
-              <input type="text" name="money" id="donation-cox" class="input input-bordered w-full mb-4"><br>
+              <input type="text" name="money" id="donation-cox" placeholder="Write Your Donation Amount!" class="input input-bordered w-full mb-4"><br>
               <button id="cox-btn" class="btn btn-color w-full">Donate Now</button>
             </form>
           </div>
         </div>
         <!-- card 02 end -->
         <!-- card 03 -->
-        <div class="md:flex md:gap-8 mb-6">
+        <div class="md:flex md:gap-8 mb-6 rounded-2xl border-2 p-2 md:p-8">
           <!--card image -->
           <div class="md:w-[50%] mb-4 md:mb-0"><img src="./images/i-khulna.png" alt="Khulna_Flade" class="w-full"></div>
           <!-- texts 0f card -->
@@ -115,10 +115,10 @@
             <!-- amount -->
             <div class="flex gap-2 btn w-fit mb-4">
               <img src="./images/dolor-icon.png">
-              <h4>100 BDT</h4>
+              <h4><span id="khulna-money">35000</span> BDT</h4>
             </div>
             <!-- headline -->
-            <h2 class="text-[#111111] font-bold text-xl mb-4">Donate for Flood at khulna, Bangladesh</h2>
+            <h2 class="text-[#111111] font-bold text-xl mb-4">Donate for Flood at <span id="khulna" >khulna</span>, Bangladesh</h2>
             <!-- description -->
             <p class="text-[#111111B3] font-light mb-4">We urgently need your support to help the victims of the recent
               flood in Khulna. Many families have lost their homes and livelihoods, facing dire conditions as they
@@ -128,8 +128,8 @@
               efforts to bring hope and relief to those in need—every donation counts, no matter how small!</p>
             <!-- input amount -->
             <form class="mt-4">
-              <input type="text" name="money" id="donation-amount" class="input input-bordered w-full mb-4"><br>
-              <button class="btn btn-color w-full">Donate Now</button>
+              <input type="text" name="money" id="donation-khulna" placeholder="Write Your Donation Amount!" class="input input-bordered w-full mb-4"><br>
+              <button id="khulna-btn" class="btn btn-color w-full">Donate Now</button>
             </form>
           </div>
         </div>
@@ -137,19 +137,20 @@
       </div>
     </section>
     <!-- modal -->
-    <div id="confirmation-alert" class="fixed left-0 top-1/3 w-full h-full z-[1000] hidden">
-      <div class="text-center bg-green-300 w-10/12 md:w-2/5 rounded-xl mx-auto">
+    <div id="confirmation-alert" class="shadow-lg bg-[#00000023] fixed left-0 top-1/3 w-full h-full z-[1000] hidden">
+      <div class="text-center bg-white border-2 w-10/12 md:w-2/5 rounded-2xl mx-auto">
         <h1 class="font-extrabold text-2xl mb-4 pt-4">Congrats!</h1>
         <img class="mb-6 w-fit mx-auto" src="./images/dolor-icon.png" alt="">
         <h5 class="font-light text-sm mb-2">You Have Donated for Humankind</h5>
         <h3 class="font-extrabold text-xl mb-2">Successfully</h3>
-        <button id="confirmation-close" class="btn mb-6 bg-pink-500 font-semibold text-xl ho">Close Confirmation</button>
+        <button id="confirmation-close" class="btn mb-6 font-semibold text-xl ho">Close Confirmation</button>
       </div>
     </div>
+
     <!-- history section -->
     <section id="history-sec" class="hidden">
       <div id="history-container">
-
+        
       </div>
     </section>
   </main>
